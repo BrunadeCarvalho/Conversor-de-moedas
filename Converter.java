@@ -56,6 +56,5 @@ public class Converter {
         }else{
             JOptionPane.showMessageDialog(null, "Valor inválido", "Conversor de moedas", JOptionPane.ERROR_MESSAGE);
         }
-
     }
 }
