@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.text.DecimalFormat;
 
 public class Converter {
     public static void main(String[] args) {
@@ -45,8 +46,12 @@ public class Converter {
                         simbolo = "€";
                     }
                 }
+
+                DecimalFormat df = new DecimalFormat("0.00");
+
+
                 double valorFinal = (resultado * taxa);
-                JOptionPane.showMessageDialog(null, "O valor da conversão é de " + simbolo + valorFinal, "Conversor de moedas", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "O valor da conversão é de " + simbolo + (df.format(valorFinal)), "Conversor de moedas", JOptionPane.INFORMATION_MESSAGE);
             }
         }else{
             JOptionPane.showMessageDialog(null, "Valor inválido", "Conversor de moedas", JOptionPane.ERROR_MESSAGE);
