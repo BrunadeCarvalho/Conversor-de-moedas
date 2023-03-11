@@ -1,8 +1,11 @@
 import javax.swing.*;
+import java.awt.*;
 import java.text.DecimalFormat;
 
 public class Converter {
     public static void main(String[] args) {
+        UIManager.put("OptionPane.minimumSize", new Dimension(500, 100));
+
         String[] opcoes = {"Dólar para Euro", "Dólar para Real", "Euro para Dólar", "Euro para Real",
                 "Real para Dólar", "Real para Euro"};
 
